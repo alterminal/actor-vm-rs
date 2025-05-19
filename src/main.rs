@@ -1,5 +1,4 @@
 use std::ptr;
-
 enum Inst {
     Mov,
     Add,
@@ -62,13 +61,6 @@ impl Reg {
             _ => panic!("Unknown register"),
         }
     }
-}
-
-enum RV32I {
-    Ului = 55,
-    Uauipc = 23,
-    Jjal = 111,
-    Ijalr = 103,
 }
 
 enum RV64I {
